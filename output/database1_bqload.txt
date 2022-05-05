@@ -1,0 +1,2 @@
+"bq load --source_format=ORC --hive_partitioning_mode=AUTO --hive_source_uri_prefix=hive-database-bqload-template/Databases/database1/table1.1/ --range_partition=year,1500,3000,1 source_db.table gs://hive-database-bqload-template/Databases/database1/table1.1/*"
+"bq load --source_format=ORC --hive_partitioning_mode=AUTO --hive_source_uri_prefix=hive-database-bqload-template/Databases/database1/table1.2/ --range_partition=year,1500,3000,1 source_db.table gs://hive-database-bqload-template/Databases/database1/table1.2/*"

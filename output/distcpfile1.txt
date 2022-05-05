@@ -1,0 +1,1 @@
+hadoop distcp gs://bamboo-insight-340001-warehouse/datasets/demo_migration.db/* gs://demo-migration-cb/demo_migration.db/

@@ -1,0 +1,56 @@
+'deepanshu'
+['employees_orc']
+GENERATE_DISTCP
+Generating DistCP Success
+'deepanshu'
+['employees_orc']
+EXECUTE_DISTCP
+Executing DistCP Success
+'deepanshu'
+['employees_orc']
+GENERATE_BQLOAD
+['[', "'", 'e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', 's', '_', 'o', 'r', 'c', "'", ']'] ELSE PRINT
+In write method ['[', "'", 'e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', 's', '_', 'o', 'r', 'c', "'", ']']
+                                                                                                                                                                                                                                                                     0
+0  bq load --source_format=ORC --hive_partitioning_mode=AUTO --hive_source_uri_prefix=hive-database-bqload-template/Databases/database1/table1.1/ --range_partition=year,1500,3000,1 source_db.table gs://hive-database-bqload-template/Databases/database1/table1.1/*
+1  bq load --source_format=ORC --hive_partitioning_mode=AUTO --hive_source_uri_prefix=hive-database-bqload-template/Databases/database1/table1.2/ --range_partition=year,1500,3000,1 source_db.table gs://hive-database-bqload-template/Databases/database1/table1.2/*
+Generating BQLoad Success
+['[', "'", 'e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', 's', '_', 'o', 'r', 'c', "'", ']']
+'deepanshu'
+['employees_orc']
+EXECUTE_BQLOAD
+['[', "'", 'e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', 's', '_', 'o', 'r', 'c', "'", ']'] Execute BQTableNames
+BadRequest
+'deepanshu'
+['employees_orc']
+VALIDATION_REPORT
+['[', "'", 'e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', 's', '_', 'o', 'r', 'c', "'", ']'] TABLES_LIST_IN_VALIDATION
+Validation Successful
+'deepanshu'
+['employees_orc']
+GENERATE_DISTCP
+Generating DistCP Success
+'deepanshu'
+['employees_orc']
+EXECUTE_DISTCP
+Executing DistCP Success
+'deepanshu'
+['employees_orc']
+GENERATE_BQLOAD
+['employees_orc'] ELSE PRINT
+In write method ['employees_orc']
+                                                                                                                                                                                                                                                                     0
+0  bq load --source_format=ORC --hive_partitioning_mode=AUTO --hive_source_uri_prefix=hive-database-bqload-template/Databases/database1/table1.2/ --range_partition=year,1500,3000,1 source_db.table gs://hive-database-bqload-template/Databases/database1/table1.2/*
+1  bq load --source_format=ORC --hive_partitioning_mode=AUTO --hive_source_uri_prefix=hive-database-bqload-template/Databases/database1/table1.1/ --range_partition=year,1500,3000,1 source_db.table gs://hive-database-bqload-template/Databases/database1/table1.1/*
+Generating BQLoad Success
+['employees_orc']
+'deepanshu'
+['employees_orc']
+EXECUTE_BQLOAD
+['[', "'", 'e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', 's', '_', 'o', 'r', 'c', "'", ']'] Execute BQTableNames
+BadRequest
+'deepanshu'
+['employees_orc']
+VALIDATION_REPORT
+['[', "'", 'e', 'm', 'p', 'l', 'o', 'y', 'e', 'e', 's', '_', 'o', 'r', 'c', "'", ']'] TABLES_LIST_IN_VALIDATION
+Validation Successful
